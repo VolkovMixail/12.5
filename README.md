@@ -5,13 +5,8 @@
 ### Задание 1
 
 Напишите запрос к учебной базе данных, который вернёт процентное отношение общего размера всех индексов к общему размеру всех таблиц.
-```sql
- select ROUND(t1.soi*100/t1.sod) '%_of_indexes'
- from (
-  select SUM(data_length) sod, SUM(index_length) soi
-  from INFORMATION_SCHEMA.TABLES) t1;
-```
-![]()
+
+![](https://github.com/VolkovMixail/12.5/blob/main/img/12-5-1.png)
 
 ---
 
